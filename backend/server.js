@@ -4,11 +4,11 @@ const connectDB = require('./db/db');
 const taskRoutes = require('./routes/taskRoutes');
 
 const app = express();
-// const PORT = process.env.PORT || 3001;
+
 
 app.use(cors(
   {
-    origin: ["https://todoapp-api-kohl.vercel.app"],
+    origin: ["https:todoapp-api-kohl.vercel.app"],
     methods: ["POST", "GET", "DELETE"],
     credentials: true
   }
@@ -21,10 +21,4 @@ connectDB();
 
 app.use('/api', taskRoutes);
 
-// function startServer() {
-//   app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-//   });
-// }
 
-// startServer();
