@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors(
   {
-    origin: ["https://todo-app-beta-sandy.vercel.app/"],
+    origin: "*",
     methods: ["POST", "GET", "DELETE"],
     credentials: true
   }
