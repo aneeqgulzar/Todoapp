@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/tasks")
+    fetch("https://todoapp-api-kohl.vercel.app/api/tasks")
       .then((response) => response.json())
       .then((data) => setTasks(data));
   }, []);
@@ -38,7 +38,7 @@ export default function Home() {
   const addToTask = async () => {
     if (!newTask) return;
 
-    await fetch("http://localhost:3001/api/tasks", {
+    await fetch("https://todoapp-api-kohl.vercel.app/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export default function Home() {
   };
 
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:3001/api/tasks/${id}`, {
+    await fetch(`https://todoapp-api-kohl.vercel.app/api/tasks/${id}`, {
       method: "DELETE",
     });
 
@@ -59,7 +59,7 @@ export default function Home() {
   };
 
   const updateTasks = () => {
-    fetch("http://localhost:3001/api/tasks")
+    fetch("https://todoapp-api-kohl.vercel.app/api/tasks")
       .then((response) => response.json())
       .then((data) => setTasks(data));
   };
