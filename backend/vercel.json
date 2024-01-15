@@ -2,7 +2,7 @@
     "version": 2,
     "name": "todoapp",
     "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
+       { "src": "/backend/routes/taskRoutes.js", "use": "@vercel/node" }
     ],
     "routes": [
        { "src": "/(.*)", "dest": "/backend/routes/taskRoutes.js" }
