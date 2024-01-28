@@ -117,7 +117,7 @@ export default function Home() {
 
         {showTodos && (
           <div className="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans">
-            <div className="bg-neutral-100 rounded-md shadow  m-4 min-h-64 w-96 lg:w-96 lg:max-w-lg">
+          <div className="bg-neutral-100 rounded-md shadow m-4 max-h-64 overflow-y-auto w-96 lg:w-96 lg:max-w-lg">
               {tasks.length === 0 ? (
                 <p className="text-black mt-20 text-center ">No tasks today</p>
               ) : (
