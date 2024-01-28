@@ -1,2 +1,0 @@
-https://todoapp-api-kohl.vercel.app/api/tasks        backend url 
-https://todo-app-beta-sandy.vercel.app/              frontend url
